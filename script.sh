@@ -24,7 +24,7 @@ mkdir -p ~/scpoprogramming/hw1/
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
-cd .\scpoprogramming\hw1\
+cd ./scpoprogramming/hw1/
 
 # 4. download with wget if file does not exist yet
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
