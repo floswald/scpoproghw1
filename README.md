@@ -15,8 +15,8 @@ Now you are real github pros 👷🏻‍♀️👷🏾‍♂️👩🏽‍💻�
 
 1. Towards the top right of this page, search for the _Fork_ button. 
 ![](fork.png)
-2. Click it. This will setup a copy of this repo on your own user space. Wait a moment. We will end up on _your_ github user space, at `YOUR_USERNAME/scpoproghw1`. Stay there.
-3. Let's get this repo onto your computer. Click the green button (`<> Code`) and copy the SSH URL (i.e. something like `git@github.com:YOUR_USERNAME/scpoproghw1.git`)
+2. Click it. This will setup a copy of this repo on your own user space. Wait a moment. We will end up on _your_ github user space, at `YOUR_USERNAME/scpoproghw1`. **Stay there**.
+3. Let's get the repo from your user account on github.com onto your computer. Still on `YOUR_USERNAME/scpoproghw1`, click the green button (`<> Code`) and copy the SSH URL (i.e. something like `git@github.com:YOUR_USERNAME/scpoproghw1.git`)
 4. open the terminal on your computer. where you type `bash` commands.
 5. choose a suitable location for your homeworks. I'll assume you choose to put them in `~/scpoproghw`. execute this:
     ```bash
@@ -46,7 +46,7 @@ Now you are real github pros 👷🏻‍♀️👷🏾‍♂️👩🏽‍💻�
     /Users/floswald/git/ScPoProgrammingHW/scpoproghw1/script.sh: line 99: [: ==: unary operator expected
     wrong result :-(
     ```
-* ... informing us, the _currently_ this script is producing the wrong result 😉. Over to you now!
+* ... informing us, that _currently_ this script is producing the **wrong result** 😉. Over to you now!
 
 
 
@@ -56,7 +56,7 @@ Now you are real github pros 👷🏻‍♀️👷🏾‍♂️👩🏽‍💻�
 2. `git add script.sh`, `git commit -m 'your message'`, just like you know how to do. 😀
 3. No need to add a `remote`, the initial `git clone` command took care of that.
 4. So, only thing left is to `git push`. Do it! 🚀
-5. Final step: back on `https://github.com/YOUR_USERNAME/scpoproghw1`, click on _new pull request_ on the top right of the code box. Looks like this:
+5. Final step: back on `https://github.com/YOUR_USERNAME/scpoproghw1`, click on _Contribute_ button on the top right of the code box. Looks like this:
 ![](collaborate.png)
 6. After you created the PR, you can check whether my test script thinks you got the correct result but looking out for the green check mark ✅ 
 7. If you made a mistake you'll see a red cross instead ❌. you can look at the output of the testing server, fix your mistake (if any), prepare a new commit, and push again, exactly like before. For me it's failing right now:
