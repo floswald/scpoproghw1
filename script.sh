@@ -9,27 +9,29 @@ set -e
 # Here is a list of tasks for you.
 
 # 0. Tell me who worked on this together
-echo "student 1"   # please fill in names here
-echo "student 2"
+echo "Alexandra Anghel"   # please fill in names here
+echo "Nayanika Mitash"
+echo "Tanfei Li"
+
 
 # 1. Go to your home directory: 
 # (enter your command below)
-
+cd 
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
 # (enter your command below)
-
+mkdir -p ~/scpoprogramming/hw1
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
-
+cd ~/scpoprogramming/hw1
 
 # 4. download with wget if file does not exist yet
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
 # (don't touch the following!)
 if [ ! -f  ~/scpoprogramming/hw1/movies.dat ]; then
     echo ""
-    echo "File not found in ~/scpoprogramming/hw1 !"
+    echo "File not found in ~/scpoprogr.amming/hw1 !"
     echo "will download now to *current* directory now\n"
     echo ""
     wget https://raw.githubusercontent.com/sidooms/MovieTweetings/44c525d0c766944910686c60697203cda39305d6/snapshots/10K/movies.dat -O ./movies.dat
@@ -42,9 +44,11 @@ if [ ! -f  movies.dat ]; then
     exit 1
 fi
 
+
+
 # 5. look at first 4 rows of downloaded data in `movies.dat`
 # (enter your command below)
-
+head -n 4 movies.dat
 
 # actual analysis task: A pipeline
 # we want to know how many genres each movie is classified into
@@ -83,12 +87,14 @@ fi
 # 4. redirect (>) the output of your pipeline to a file `outtable.txt` in the current directory
 # (enter your command below: just copy from 3. above and add the redirect)
 
+awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort | uniq -c > outtable.txt
+
 # 5. print your table to screen
 echo ""   # don't touch
 echo "here is my table:"   # don't touch
 
 # (enter your command below)
-
+cat outtable.txt
 
 #### End of your tasks
 # please do not modify the below lines
