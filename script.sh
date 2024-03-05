@@ -90,10 +90,6 @@ echo "here is my table:"   # don't touch
 # (enter your command below)
 cat outtable.txt
 
-cd ~/scpoproghw/scpoproghw1
-git add ~/scpoproghw/scpoproghw1/script.sh
-git commit -m 'homework by Eli, Joanna, Morgane'
-git push 
 
 #### End of your tasks
 # please do not modify the below lines
