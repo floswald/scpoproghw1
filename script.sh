@@ -14,11 +14,11 @@ echo "Joanna"
 echo "Morgane"
 
 # 1. Go to your home directory: 
-cd /Users/elishapiro/scpoproghw/scpoproghw1
+cd 
 
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
-mkdir -p ./scpoprogramming/hw1
+mkdir -p ~/Users/elishapiro/scpoproghw/scpoproghw1/scpoprogramming/hw1
 
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
