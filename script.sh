@@ -90,7 +90,7 @@ echo ""   # don't touch
 echo "here is my table:"   # don't touch
 
 # (enter your command below)
-cat outtable.text
+cat outtable.txt
 
 #### End of your tasks
 # please do not modify the below lines
