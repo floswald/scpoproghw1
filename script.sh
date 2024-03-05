@@ -16,13 +16,12 @@ echo "Morgane"
 # 1. Go to your home directory: 
 cd 
 
-
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
-mkdir -p /Users/elishapiro/scpoproghw/scpoproghw1/scpoprogramming/hw1
+mkdir -p ~/scpoprogramming/hw1
 
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
-cd ./scpoprogramming/hw1
+cd ~/scpoprogramming/hw1
 
 # 4. download with wget if file does not exist yet
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
@@ -43,7 +42,7 @@ if [ ! -f  movies.dat ]; then
 fi
 
 # 5. look at first 4 rows of downloaded data in `movies.dat`
-head -n 4 ./movies.dat.txt
+head -n 4 movies.dat.txt
 
 
 # actual analysis task: A pipeline
@@ -91,6 +90,7 @@ echo "here is my table:"   # don't touch
 # (enter your command below)
 cat outtable.txt
 
+cd ~/scpoproghw/scpoproghw1
 git add ~/scpoproghw/scpoproghw1/script.sh
 git commit -m 'homework by Eli, Joanna, Morgane'
 git push 
