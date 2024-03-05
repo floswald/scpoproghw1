@@ -17,14 +17,15 @@ echo "Morgane"
 cd 
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
-mkdir -p ~/scpoprogramming/hw1
+mkdir -p scpoprogramming/hw1
 
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
-cd ~/scpoprogramming/hw1
+cd scpoprogramming/hw1
 
 # 4. download with wget if file does not exist yet
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
+curl https://raw.githubusercontent.com/sidooms/MovieTweetings/44c525d0c766944910686c60697203cda39305d6/snapshots/10K/movies.dat > "movies.dat"
 # (don't touch the following!)
 if [ ! -f  ~/scpoprogramming/hw1/movies.dat ]; then
     echo ""
@@ -42,7 +43,7 @@ if [ ! -f  movies.dat ]; then
 fi
 
 # 5. look at first 4 rows of downloaded data in `movies.dat`
-head -n 4 movies.dat.txt
+head -n 4 movies.dat
 
 
 # actual analysis task: A pipeline
