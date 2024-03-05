@@ -84,7 +84,7 @@ awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}'
 
 # 4. redirect (>) the output of your pipeline to a file `outtable.txt` in the current directory
 # (enter your command below: just copy from 3. above and add the redirect)
-awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort | uniq -c > outtable.text
+awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort | uniq -c > outtable.txt
 # 5. print your table to screen
 echo ""   # don't touch
 echo "here is my table:"   # don't touch
