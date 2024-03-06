@@ -44,7 +44,7 @@ fi
 
 # 5. look at first 4 rows of downloaded data in `movies.dat`
 # (enter your command below)
-cd ../scpoprogramming/hw1
+cd ~/scpoprogramming/hw1
 head -n 4 movies.dat
 
 # actual analysis task: A pipeline
@@ -98,7 +98,7 @@ echo ""
 echo ""
 echo "checking results...."
 res=$(tail -n 1 outtable.txt | awk -F' ' '{print $1}')
-if [ ${res} = 5 ] 
+if [ ${res} == 5 ] 
 then
     echo "correct! :-)"
     exit 0
