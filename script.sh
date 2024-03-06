@@ -19,7 +19,7 @@ cd
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
 # (enter your command below)
-mkdir ~/scpoprogramming/hw1
+mkdir -p ~/scpoprogramming/hw1
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
@@ -27,6 +27,7 @@ cd ~/scpoprogramming/hw1
 
 # 4. download with wget if file does not exist yet
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
+curl https://raw.githubusercontent.com/sidooms/MovieTweetings/44c525d0c766944910686c60697203cda39305d6/snapshots/10K/movies.dat > "movies.dat"
 # (don't touch the following!)
 if [ ! -f  ~/scpoprogramming/hw1/movies.dat ]; then
     echo ""
@@ -112,4 +113,4 @@ then
 else
     echo "wrong result :-("
     exit 1
-fi
+fi 
