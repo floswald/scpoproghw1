@@ -9,19 +9,18 @@ set -e
 # Here is a list of tasks for you.
 
 # 0. Tell me who worked on this together
-echo "student 1"   # please fill in names here
-echo "student 2"
+echo "Amani"   # please fill in names here
+echo "Nicole Mejia"
 
 # 1. Go to your home directory: 
-# (enter your command below)
-
+cd ~
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
-# (enter your command below)
+mkdir ~p scpoprogrammming/hw1
 
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
-# (enter your command below)
+cd scpoprogramming/hw1
 
 
 # 4. download with wget if file does not exist yet
