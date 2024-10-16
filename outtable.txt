@@ -1,0 +1,6 @@
+Maryam Hchaichi
+Student 2
+
+File not found in ~/scpoprogramming/hw1 !
+will download now to *current* directory now\n
+
